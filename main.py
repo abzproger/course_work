@@ -220,7 +220,7 @@ class Ui_Dialog(object):
         font.setFamily("Book Antiqua")
         font.setPointSize(16)
         self.target_amount.setFont(font)
-        self.target_amount.setMinimum(int(self.get_initial_deposit() + 1))
+        self.target_amount.setMinimum(int(self.target_amount.value() + 1))
         self.target_amount.setMaximum(1000000)
         self.target_amount.setProperty("value", 1000)
         self.target_amount.setDisplayIntegerBase(1000)
